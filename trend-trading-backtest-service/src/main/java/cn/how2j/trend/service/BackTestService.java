@@ -8,6 +8,9 @@ import org.springframework.stereotype.Service;
 import java.util.Collections;
 import java.util.List;
  
+/**
+ * @author xiekaikai
+ */
 @Service
 public class BackTestService {
     @Autowired IndexDataClient indexDataClient;
