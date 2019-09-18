@@ -22,6 +22,8 @@ public class IndexController {
     @CrossOrigin
     public List<Index> codes() throws Exception {
         System.out.println("current instance's port is "+ ipConfiguration.getPort());
-        return indexService.get();
+        List<Index> list1 = indexService.get();
+        System.err.println(list1.size());
+        return list1;
     }
 }
