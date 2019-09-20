@@ -1,6 +1,6 @@
 # trendParentProject
 趋势投资SPRINGCLOUD
-#1 启动说明
+# 1启动说明
 
 先启动 EurekaServerApplication
 按照后面的步骤 启动 RabbitMQ
@@ -15,7 +15,7 @@
 修改git地址 https://github.com/how2j/trendConfig/blob/master/respo/trend-trading-backtest-view-dev.properties 成为新的版本
 然后运行 FreshConfigUtil类 刷新。
 拉到最下面，可以看到这个版权信息刷新了。
-#2.微服务及端口
+# 2.微服务及端口
  微服务及端口，其中集群的会有多个端口，分别代表一个集群里的多个实例。
 服务名|服务id|端口号
 --|:--:|--:
@@ -31,7 +31,7 @@
 断路器监控|index-hystrix-dashboard|	8070
 断路器聚合监控|index-turbine|	8080
 
-#3.第三方
+# 3.第三方
 第三方服务名|端口号|url|其他
 ---|:--:|---:|:--
 redis|6379||
