@@ -27,5 +27,20 @@
       <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
     </dependency>
 
+    <!--config-client-->
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-config</artifactId>
+    </dependency>
+<!--1. 多了spring-boot-starter-actuator 用于访问路径：/actuator/bus-refresh， 这个地址就用来同志它去更新配置服务器
+2. 多了spring-cloud-starter-bus-amqp 用于支持 rabbitmq -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.cloud</groupId>
+      <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+    </dependency>
   </dependencies>
 </project>
